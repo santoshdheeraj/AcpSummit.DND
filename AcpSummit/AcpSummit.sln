@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcpSummitApp", "AcpSummitApp.csproj", "{7AE8A729-5969-4F9B-845E-12BBE928C46E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcpSummitApi", "..\AcpSummitApi\AcpSummitApi.csproj", "{11F8A67D-6000-4737-BB6F-EBFE27A830B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AE8A729-5969-4F9B-845E-12BBE928C46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE8A729-5969-4F9B-845E-12BBE928C46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE8A729-5969-4F9B-845E-12BBE928C46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE8A729-5969-4F9B-845E-12BBE928C46E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F8A67D-6000-4737-BB6F-EBFE27A830B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F8A67D-6000-4737-BB6F-EBFE27A830B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F8A67D-6000-4737-BB6F-EBFE27A830B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F8A67D-6000-4737-BB6F-EBFE27A830B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86A9C695-C168-4BCE-B758-112AD7F8CB36}
+	EndGlobalSection
+EndGlobal

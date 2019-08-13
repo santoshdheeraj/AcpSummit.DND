@@ -1,0 +1,10 @@
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\bin\Debug\netcoreapp2.1\AcpSummitApi.deps.json
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\bin\Debug\netcoreapp2.1\AcpSummitApi.runtimeconfig.json
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\bin\Debug\netcoreapp2.1\AcpSummitApi.runtimeconfig.dev.json
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\bin\Debug\netcoreapp2.1\AcpSummitApi.dll
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.csproj.CoreCompileInputs.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.RazorAssemblyInfo.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.RazorAssemblyInfo.cs
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.AssemblyInfoInputs.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.AssemblyInfo.cs
+C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.RazorTargetAssemblyInfo.cache

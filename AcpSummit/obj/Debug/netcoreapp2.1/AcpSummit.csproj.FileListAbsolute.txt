@@ -1,0 +1,3 @@
+C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummit.csproj.CoreCompileInputs.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummit.AssemblyInfoInputs.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummit.AssemblyInfo.cs
