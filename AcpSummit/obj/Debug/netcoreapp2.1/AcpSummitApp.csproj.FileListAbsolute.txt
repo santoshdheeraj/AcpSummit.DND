@@ -21,5 +21,4 @@ C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.pdb
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.csproj.CopyComplete
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
-C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.csprojAssemblyReference.cache
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs

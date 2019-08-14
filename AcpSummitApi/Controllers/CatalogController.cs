@@ -27,13 +27,14 @@ namespace AcpSummitApi.Controllers
 
         // GET: api/Catalog
         [HttpGet]
-        public string Get()
+        public List<CatalogItem> Get(string source)
         {
             if (!_catalogContext.CatalogItems.Any())
             {
-                _contextSeed.SeedCatalogItems(_catalogContext, "mock");
+                _contextSeed.SeedCatalogItems(_catalogContext, source);
             }
-            return (_catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator()));
+            return _catalogContext.CatalogItems;
+            //return (_catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator()));
         }
 
         /*

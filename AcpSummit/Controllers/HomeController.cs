@@ -14,19 +14,20 @@ namespace AcpSummitApp.Controllers
     public class HomeController : Controller
     {
         CatalogApi api = new CatalogApi();
-        string rs = "";
+        List<CatalogItem> rs = new List<CatalogItem>();
 
         public async Task<IActionResult> Index()
         {
              using (var client = new HttpClient())
             {
-                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog");
+                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog?source=mock");
                 if (res.IsSuccessStatusCode)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;
-                    rs = JsonConvert.DeserializeObject<string>(result);
+                    rs = JsonConvert.DeserializeObject<List<CatalogItem>>(result);
                 }
             }
+
             return View();
         }
 

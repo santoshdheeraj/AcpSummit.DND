@@ -12,4 +12,3 @@ C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\bin\Debug\netcoreapp2.1\AcpSummitA
 C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.dll
 C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.pdb
 C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
-C:\Users\sunny\Desktop\AcpSummit\AcpSummitApi\obj\Debug\netcoreapp2.1\AcpSummitApi.csprojAssemblyReference.cache
