@@ -13,32 +13,49 @@ namespace AcpSummitApi.Controllers
     [ApiController]
     public class CatalogController : Controller
     {
-        public CatalogContextSeed _contextSeed = new CatalogContextSeed();
+        public CatalogContextSeed _contextSeed;
         public CatalogContext _catalogContext;
+        public CatalogItemsHelper _catalogItemsHelper;
 
         public CatalogController()
         {
+            _contextSeed = new CatalogContextSeed();
             _catalogContext = new CatalogContext();
             _catalogContext.CatalogItems = new List<CatalogItem>();
-            if (!_catalogContext.CatalogItems.Any())
-            {
-                _contextSeed.SeedCatalogItems(_catalogContext, "csv");
-            }
+            _catalogItemsHelper = new CatalogItemsHelper();
         }
 
         // GET: api/Catalog
         [HttpGet]
         public string Get()
         {
-            string rs = "";
-            using (IEnumerator<CatalogItem> catalogItemEnumerator = _catalogContext.CatalogItems.GetEnumerator())
+            if (!_catalogContext.CatalogItems.Any())
             {
-                while (catalogItemEnumerator.MoveNext())
-                {
-                    rs += catalogItemEnumerator.Current.Name + " ";
-                }
+                _contextSeed.SeedCatalogItems(_catalogContext, "csv");
             }
-            return rs;
+            return (_catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator()));
         }
+
+        /*
+        // GET: api/Catalog/Create
+        [HttpGet]
+        [Route("create")]
+        public IActionResult Create(string Name, string Description, string Price)
+        {
+            _contextSeed.AddCatalogItemDataToCsv(Name,Description,Price);
+            return Ok();
+        }
+        */
+
+        
+        // GET: api/Catalog/Create
+        [HttpGet]
+        [Route("create")]
+        public IActionResult Create(CatalogItem catalogItem)
+        {
+            _contextSeed.AddCatalogItemToCsv(catalogItem);
+            return Ok();
+        }
+        
     }
 }

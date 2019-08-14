@@ -117,6 +117,11 @@ namespace AcpSummitApi.Helpers
             return csvheaders;
         }
 
+        public void AddCatalogItemDataToCsv(string Name, string Description, string Price)
+        {
+            AddCatalogItemToCsv(CreateCatalogItemByValues("0",Name,Description,Decimal.Parse(Price)));
+        }
+
         public void AddCatalogItemToCsv(CatalogItem catalogItem)
         {
             var csv = new StringBuilder();

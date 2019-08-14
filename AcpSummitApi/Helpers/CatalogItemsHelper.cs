@@ -17,7 +17,7 @@ namespace AcpSummitApi.Helpers
         {
             string rs = "";
 
-            rs += $"{"Id".PadRight(40)} | {"Name".PadRight(15)} | {"Description".PadRight(50)} | {"Price"}" + "\n";
+            rs += $"{"Id".PadRight(40)} | {"Name".PadRight(25)} | {"Description".PadRight(50)} | {"Price"}" + "\n";
             rs += new string('-', rs.Length) + "\n";
 
             while (catalogItemEnumerator.MoveNext())

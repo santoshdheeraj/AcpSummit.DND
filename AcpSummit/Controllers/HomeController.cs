@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using AcpSummitApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -17,20 +18,52 @@ namespace AcpSummitApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            HttpClient client = api.Initial();
-            HttpResponseMessage res = await client.GetAsync("api/Catalog");
-            if (res.IsSuccessStatusCode) {
-                var result = res.Content.ReadAsStringAsync().Result;
-                rs = JsonConvert.DeserializeObject<string>(result);
+             using (var client = new HttpClient())
+            {
+                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog");
+                if (res.IsSuccessStatusCode)
+                {
+                    var result = res.Content.ReadAsStringAsync().Result;
+                    rs = JsonConvert.DeserializeObject<string>(result);
+                }
             }
             return View();
         }
 
-        // GET: api/Home
+        // GET: Home/Get
         [HttpGet]
-        public void Get(string source)
+        public string Get()
         {
-            string resultset = "";
+            return "successful";
         }
+
+
+        // GET: Home/Create
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Home/Create
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm] CatalogItem catalogItem)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://acpsummit2019api.azurewebsites.net/api/Catalog/create");
+                var response = await client.PostAsJsonAsync<CatalogItem>("create", catalogItem);
+                bool returnValue = await response.Content.ReadAsAsync<bool>();
+
+                if (returnValue)
+                {
+                    return RedirectToAction("Index");
+                }
+
+            }
+                
+            return View(catalogItem);
+        }
+
     }
 }
