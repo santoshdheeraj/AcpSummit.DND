@@ -31,7 +31,7 @@ namespace AcpSummitApi.Controllers
         {
             if (!_catalogContext.CatalogItems.Any())
             {
-                _contextSeed.SeedCatalogItems(_catalogContext, "csv");
+                _contextSeed.SeedCatalogItems(_catalogContext, "mock");
             }
             return (_catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator()));
         }
