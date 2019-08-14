@@ -11,7 +11,6 @@ namespace AcpSummitApp
         public HttpClient Initial()
         {
             var client = new HttpClient();
-            //adding this as a test
             client.BaseAddress = new Uri("http://localhost:44398");
             return client;
         }
