@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY ["../AcpSummitApi/AcpSummitApi.csproj", "../AcpSummitApi/"]
-RUN dotnet restore "../AcpSummitApi/AcpSummitApi.csproj"
+COPY ["AcpSummitApi.csproj", ""]
+RUN dotnet restore "./AcpSummitApi.csproj"
 COPY . .
-WORKDIR "/src/../AcpSummitApi"
+WORKDIR "/src/."
 RUN dotnet build "AcpSummitApi.csproj" -c Release -o /app
 
 FROM build AS publish
