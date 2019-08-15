@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AcpSummitApi.Helpers;
 using AcpSummitApi.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,9 +18,9 @@ namespace AcpSummitApi.Controllers
         public CatalogContext _catalogContext;
         public CatalogItemsHelper _catalogItemsHelper;
 
-        public CatalogController()
+        public CatalogController(IHostingEnvironment hostingEnvironment)
         {
-            _contextSeed = new CatalogContextSeed();
+            _contextSeed = new CatalogContextSeed(hostingEnvironment);
             _catalogContext = new CatalogContext();
             _catalogContext.CatalogItems = new List<CatalogItem>();
             _catalogItemsHelper = new CatalogItemsHelper();
