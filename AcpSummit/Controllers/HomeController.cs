@@ -19,7 +19,7 @@ namespace AcpSummitApp.Controllers
             List<CatalogItem> rs = new List<CatalogItem>();
              using (var client = new HttpClient())
             {
-                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog?source=mock");
+                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog?source=csv");
                 if (res.IsSuccessStatusCode)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;

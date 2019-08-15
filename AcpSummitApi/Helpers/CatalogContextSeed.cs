@@ -1,4 +1,5 @@
 ﻿using AcpSummitApi.Models;
+using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,12 +12,20 @@ namespace AcpSummitApi.Helpers
 {
     public class CatalogContextSeed
     {
+        private readonly IHostingEnvironment _hostingEnvironment;
+
+        public CatalogContextSeed(IHostingEnvironment hostingEnvironment)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
+
         public void SeedCatalogItems(CatalogContext context, string source)
         {
             if (source == "csv")
             {
-                //string currentDirectory = System.Environment.CurrentDirectory;
-                string csvFileCatalogItems = Path.Combine("../Setup", "CatalogItems.csv");
+                string projectRootPath = _hostingEnvironment.ContentRootPath;
+
+                string csvFileCatalogItems = Path.Combine(projectRootPath, "Setup", "CatalogItems.csv");
 
                 if (!File.Exists(csvFileCatalogItems))
                     SeedCatalogItems(context, "mock");
@@ -128,9 +137,9 @@ namespace AcpSummitApi.Helpers
             var newLine = string.Format("{0},{1},{2},{3}", Guid.NewGuid().ToString(), catalogItem.Name, catalogItem.Description, catalogItem.Price);
             csv.AppendLine(newLine);
 
-            //string currentDirectory = System.Environment.CurrentDirectory;
-            //string csvFileCatalogItems = Path.Combine(currentDirectory, "Setup", "CatalogItems.csv");
-            string csvFileCatalogItems = Path.Combine("../Setup", "CatalogItems.csv");
+            string projectRootPath = _hostingEnvironment.ContentRootPath;
+            string csvFileCatalogItems = Path.Combine(projectRootPath, "Setup", "CatalogItems.csv");
+
             File.AppendAllText(csvFileCatalogItems, csv.ToString());
         }
     }
