@@ -144,5 +144,30 @@ namespace AcpSummitApi.Helpers
 
             File.AppendAllText(csvFileCatalogItems, csv.ToString());
         }
+
+        public string currentPaths()
+        {
+            string allPathDefinitions = "";
+
+            string projectRootPath = _hostingEnvironment.ContentRootPath;
+
+            allPathDefinitions += "projectRootPath" + "  -  " + projectRootPath + "\n";
+
+            string projectRootPathFullPath = Path.GetFullPath(projectRootPath);
+
+            allPathDefinitions += "projectRootPathFullPath" + "  -  " + projectRootPathFullPath + "\n";
+
+            string[] projectRootPathDirectories = Directory.GetDirectories(projectRootPath);
+
+            allPathDefinitions += " Directories inside projectrootpath " + "\n";
+
+            foreach(string dir in projectRootPathDirectories)
+            {
+                allPathDefinitions += "Dir" + "  -  " + dir + "\n";
+            }
+
+
+            return allPathDefinitions;
+        }
     }
 }

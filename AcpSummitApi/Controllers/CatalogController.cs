@@ -48,6 +48,12 @@ namespace AcpSummitApi.Controllers
             return _catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator());
         }
 
+        [Route("paths")]
+        public string Paths()
+        {
+            return _contextSeed.currentPaths();
+        }
+
         /*
         // GET: api/Catalog/Create
         [HttpGet]
