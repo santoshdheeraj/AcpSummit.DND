@@ -16,8 +16,7 @@ namespace AcpSummitApi.Helpers
             if (source == "csv")
             {
                 //string currentDirectory = System.Environment.CurrentDirectory;
-                //string csvFileCatalogItems = Path.Combine(currentDirectory,"Setup", "CatalogItems.csv");
-                string csvFileCatalogItems = Path.Combine("src","Setup", "CatalogItems.csv");
+                string csvFileCatalogItems = Path.Combine("../Setup", "CatalogItems.csv");
 
                 if (!File.Exists(csvFileCatalogItems))
                     SeedCatalogItems(context, "mock");
@@ -131,7 +130,7 @@ namespace AcpSummitApi.Helpers
 
             //string currentDirectory = System.Environment.CurrentDirectory;
             //string csvFileCatalogItems = Path.Combine(currentDirectory, "Setup", "CatalogItems.csv");
-            string csvFileCatalogItems = Path.Combine("Setup", "CatalogItems.csv");
+            string csvFileCatalogItems = Path.Combine("../Setup", "CatalogItems.csv");
             File.AppendAllText(csvFileCatalogItems, csv.ToString());
         }
     }

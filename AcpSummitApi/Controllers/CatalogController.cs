@@ -37,6 +37,16 @@ namespace AcpSummitApi.Controllers
             //return (_catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator()));
         }
 
+        [Route("print")]
+        public string Print(string source)
+        {
+            if (!_catalogContext.CatalogItems.Any())
+            {
+                _contextSeed.SeedCatalogItems(_catalogContext, source);
+            }
+            return _catalogItemsHelper.PrintItemsInTabularFormat(_catalogContext.CatalogItems.GetEnumerator());
+        }
+
         /*
         // GET: api/Catalog/Create
         [HttpGet]
@@ -48,7 +58,7 @@ namespace AcpSummitApi.Controllers
         }
         */
 
-        
+
         // GET: api/Catalog/Create
         [HttpGet]
         [Route("create")]

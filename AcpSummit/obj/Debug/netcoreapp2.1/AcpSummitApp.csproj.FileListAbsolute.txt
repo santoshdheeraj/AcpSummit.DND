@@ -13,7 +13,6 @@ C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.TagHelpers.input.cache
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.TagHelpers.output.cache
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.RazorCoreGenerate.cache
-C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.RazorTargetAssemblyInfo.cache
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.RazorTargetAssemblyInfo.cs
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.Views.pdb
@@ -22,3 +21,5 @@ C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.csproj.CopyComplete
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
+C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\AcpSummitApp.csprojAssemblyReference.cache
+C:\Users\sunny\Desktop\AcpSummit\AcpSummit\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs

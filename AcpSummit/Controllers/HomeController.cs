@@ -13,11 +13,10 @@ namespace AcpSummitApp.Controllers
     
     public class HomeController : Controller
     {
-        CatalogApi api = new CatalogApi();
-        List<CatalogItem> rs = new List<CatalogItem>();
-
+      
         public async Task<IActionResult> Index()
         {
+            List<CatalogItem> rs = new List<CatalogItem>();
              using (var client = new HttpClient())
             {
                 HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog?source=mock");
@@ -28,7 +27,7 @@ namespace AcpSummitApp.Controllers
                 }
             }
 
-            return View();
+            return View(rs);
         }
 
         // GET: Home/Get
