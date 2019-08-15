@@ -12612,11 +12612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummit\\AcpSummitApp.csproj",
+      "projectUniqueName": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummit\\AcpSummitApp.csproj",
       "projectName": "AcpSummitApp",
-      "projectPath": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummit\\AcpSummitApp.csproj",
+      "projectPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummit\\AcpSummitApp.csproj",
       "packagesPath": "C:\\Users\\sunny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummit\\obj\\",
+      "outputPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

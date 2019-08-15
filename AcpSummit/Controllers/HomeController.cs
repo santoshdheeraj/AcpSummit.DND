@@ -19,7 +19,7 @@ namespace AcpSummitApp.Controllers
             List<CatalogItem> rs = new List<CatalogItem>();
              using (var client = new HttpClient())
             {
-                HttpResponseMessage res = await client.GetAsync("https://acpsummit2019api.azurewebsites.net/api/Catalog?source=csv");
+                HttpResponseMessage res = await client.GetAsync("https://acpsummitdemoapi.azurewebsites.net/api/Catalog?source=csv");
                 if (res.IsSuccessStatusCode)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;
@@ -51,7 +51,7 @@ namespace AcpSummitApp.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://acpsummit2019api.azurewebsites.net/api/Catalog/create");
+                client.BaseAddress = new Uri("https://acpsummitdemoapi.azurewebsites.net/api/Catalog/create");
                 var response = await client.PostAsJsonAsync<CatalogItem>("create", catalogItem);
                 bool returnValue = await response.Content.ReadAsAsync<bool>();
 

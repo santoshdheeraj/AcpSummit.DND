@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummitApi\\AcpSummitApi.csproj": {}
+    "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummitApi\\AcpSummitApi.csproj": {
+    "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummitApi\\AcpSummitApi.csproj",
+        "projectUniqueName": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj",
         "projectName": "AcpSummitApi",
-        "projectPath": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummitApi\\AcpSummitApi.csproj",
+        "projectPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj",
         "packagesPath": "C:\\Users\\sunny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sunny\\Desktop\\AcpSummit\\AcpSummitApi\\obj\\",
+        "outputPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
