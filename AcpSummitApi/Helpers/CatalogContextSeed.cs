@@ -23,9 +23,11 @@ namespace AcpSummitApi.Helpers
         {
             if (source == "csv")
             {
-                string projectRootPath = _hostingEnvironment.ContentRootPath;
+                //string projectRootPath = _hostingEnvironment.ContentRootPath;
 
-                string csvFileCatalogItems = Path.Combine(projectRootPath, "src/Setup", "CatalogItems.csv");
+                string csvFileCatalogItems = Path.Combine("src/Setup", "CatalogItems.csv");
+
+                //var csvFileCatalogItemstDirectories = Directory.GetDirectories(projectRootPath);
 
                 if (!File.Exists(csvFileCatalogItems))
                     SeedCatalogItems(context, "mock");
@@ -137,8 +139,8 @@ namespace AcpSummitApi.Helpers
             var newLine = string.Format("{0},{1},{2},{3}", Guid.NewGuid().ToString(), catalogItem.Name, catalogItem.Description, catalogItem.Price);
             csv.AppendLine(newLine);
 
-            string projectRootPath = _hostingEnvironment.ContentRootPath;
-            string csvFileCatalogItems = Path.Combine(projectRootPath, "src/Setup", "CatalogItems.csv");
+            //string projectRootPath = _hostingEnvironment.ContentRootPath;
+            string csvFileCatalogItems = Path.Combine("src/Setup", "CatalogItems.csv");
 
             File.AppendAllText(csvFileCatalogItems, csv.ToString());
         }
