@@ -166,6 +166,22 @@ namespace AcpSummitApi.Helpers
                 allPathDefinitions += "Dir" + "  -  " + dir + "\n";
             }
 
+            string webRootPath = _hostingEnvironment.WebRootPath;
+
+            allPathDefinitions += "webRootPath" + "  -  " + webRootPath + "\n";
+
+            string webRootPathFullPath = Path.GetFullPath(webRootPath);
+
+            allPathDefinitions += "webRootPathFullPath" + "  -  " + webRootPathFullPath + "\n";
+
+            string[] webRootPathDirectories = Directory.GetDirectories(webRootPath);
+
+            allPathDefinitions += " Directories inside webrootpath " + "\n";
+
+            foreach (string dir in webRootPathDirectories)
+            {
+                allPathDefinitions += "Dir" + "  -  " + dir + "\n";
+            }
 
             return allPathDefinitions;
         }
