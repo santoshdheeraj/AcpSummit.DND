@@ -12606,30 +12606,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sunny\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/eyrental/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj",
+      "projectUniqueName": "/Users/eyrental/Projects/AcpSummit/AcpSummitApi/AcpSummitApi.csproj",
       "projectName": "AcpSummitApi",
-      "projectPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\AcpSummitApi.csproj",
-      "packagesPath": "C:\\Users\\sunny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sunny\\Desktop\\AcpSummitDND\\Repo\\AcpSummitApi\\obj\\",
+      "projectPath": "/Users/eyrental/Projects/AcpSummit/AcpSummitApi/AcpSummitApi.csproj",
+      "packagesPath": "/Users/eyrental/.nuget/packages/",
+      "outputPath": "/Users/eyrental/Projects/AcpSummit/AcpSummitApi/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\sunny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/eyrental/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
